@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float movementSpeed = 6f;
     [SerializeField] float jumpForce = 5f;
 
+    [SerializeField] Transform groundCheck;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +28,10 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
         }
+    }
+
+    bool IsGrounded()
+    {
+
     }
 }
