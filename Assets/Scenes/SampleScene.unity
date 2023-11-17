@@ -187,6 +187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4223053384267458589, guid: e34308b433a3f804683aa4e4027c3520, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -519,6 +523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4223053384267458589, guid: e34308b433a3f804683aa4e4027c3520, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -587,6 +595,10 @@ PrefabInstance:
     - target: {fileID: 4223053384267458589, guid: e34308b433a3f804683aa4e4027c3520, type: 3}
       propertyPath: m_Name
       value: Floor (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223053384267458589, guid: e34308b433a3f804683aa4e4027c3520, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -755,6 +767,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 6
   jumpForce: 5
+  groundCheck: {fileID: 377658598}
+  ground:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!4 &1833193212 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3853462303636848343, guid: e34308b433a3f804683aa4e4027c3520, type: 3}
@@ -824,6 +840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4223053384267458589, guid: e34308b433a3f804683aa4e4027c3520, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -892,6 +912,10 @@ PrefabInstance:
     - target: {fileID: 4223053384267458589, guid: e34308b433a3f804683aa4e4027c3520, type: 3}
       propertyPath: m_Name
       value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223053384267458589, guid: e34308b433a3f804683aa4e4027c3520, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
