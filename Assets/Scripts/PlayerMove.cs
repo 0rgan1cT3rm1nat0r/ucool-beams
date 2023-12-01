@@ -44,7 +44,7 @@ public class PlayerMovement1 : MonoBehaviour
         {
             this.grounded= false;
         }
-        this.anim.SetBool("jump", !this.grounded);
+        this.anim.SetBool("Jumping", !this.grounded);
 
 
     }
@@ -59,8 +59,8 @@ public class PlayerMovement1 : MonoBehaviour
 
         this.transform.position += movement * 0.01f;
 
-        this.anim.SetFloat("vertical", verticalAxis);
-        this.anim.SetFloat("horizontal", horizontalAxis);
+        this.anim.SetFloat("Vertical", verticalAxis);
+        this.anim.SetFloat("Horizontal", horizontalAxis);
     }
 
 
