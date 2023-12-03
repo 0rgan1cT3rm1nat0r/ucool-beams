@@ -31,6 +31,7 @@ public class PlayerMovement1 : MonoBehaviour
             this.rb.AddForce(Vector3.up * 6, ForceMode.Impulse);
 
         }
+        this.anim.SetBool("Jumping", !this.grounded);
     }
 
     private void Grounded()
