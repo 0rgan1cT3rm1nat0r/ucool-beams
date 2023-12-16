@@ -29,9 +29,10 @@ public class PlayerMovement1 : MonoBehaviour
         {
             Debug.Log("jumped???");
             this.rb.AddForce(Vector3.up * 6, ForceMode.Impulse);
+            this.anim.SetBool("Jumping", this.grounded);
 
         }
-        this.anim.SetBool("Jumping", !this.grounded);
+        
     }
 
     private void Grounded()
@@ -39,13 +40,13 @@ public class PlayerMovement1 : MonoBehaviour
         if(Physics.CheckSphere(this.transform.position + Vector3.down, anima, layerMask))
         {
             this.grounded = true;
-
+            this.anim.SetBool("Jumping", !this.grounded);
         }
         else
         {
-            this.grounded= false;
+            this.grounded = false;
         }
-        this.anim.SetBool("Jumping", !this.grounded);
+        //this.anim.SetBool("Jumping", !this.grounded);
 
 
     }
